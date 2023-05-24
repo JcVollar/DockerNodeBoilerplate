@@ -1,4 +1,4 @@
-# Docker Node
+# Docker Node Boilerplate
 
 It's been a while since I've worked with docker. So I created a basic setup for a node application with express. 
 It should be a basic git-pull, docker build and docker run to setup the basic development project. 
@@ -14,6 +14,9 @@ Remember to change the bind mount from my "C:/Users/jcvol/Desktop/Ny mappe" to w
 
 > docker run -p 49160:8080 -d --rm --name mycontainername -v "C:/Users/jcvol/Desktop/Ny mappe":/usr/src/app -v /usr/src/app/node_modules  myapp 
 
+or 
+
+> docker-compose up -d
 
 
 
@@ -49,6 +52,9 @@ Remove a container(you cannot remove running containers)
 Removes every image that is not in use
 > docker image prune -a
 
+Using docker-compose to start it
+> docker-compose up -d 
 
-
+Taking it down with docker-composer
+> docker-compose down
 
