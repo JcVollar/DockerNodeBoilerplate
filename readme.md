@@ -9,7 +9,9 @@ Remember to change the bind mount from my "C:/Users/jcvol/Desktop/Ny mappe" to w
 
 # Run the image
 > git pull
+
 > docker build . -t myapp
+
 > docker run -p 49160:8080 -d --rm --name mycontainername -v "C:/Users/jcvol/Desktop/Ny mappe":/usr/src/app -v /usr/src/app/node_modules  myapp 
 
 
